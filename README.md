@@ -46,7 +46,7 @@ npm install asoiaf-api
     tvSeries: [ 'Season 1', 'Season 2', 'Season 3', 'Season 4', 'Season 5' ],
     playedBy: [ 'Kit Harington' ] } ]
 ```
-## API ## **Links**
+## API ## ### Characters ###**Links**
 
  *[An API of Ice And Fire](https://anapioficeandfire.com/) 
 * [Javascript wrapper for the song of ice and fire API](https://github.com/arbazsiddiqui/A-song-of-ice-and-fire-AP)

@@ -1,16 +1,17 @@
-# Game of thrones: CARD MAKER #
+# Game of thrones: CARD MAKER!
+###  Description
+Create your personal card: "Happy Birthday", "Women day", "Hello, friend" with the Game of Thrones world! 
+ 1. Choose character or family
+ 2. Customize your card: add wishes, quotes, names, background
+ 3. Enjoy result!
 
-## Description##Create your personal card: "Happy Birthday", "Women day", "Hello, friend" with the Game of Thrones world!
+## API
 
-## Installation ##
+ - [An API of Ice And Fire](https://anapioficeandfire.com/)
+ - [Javascript wrapper for the song of ice and fire API](https://github.com/arbazsiddiqui/A-song-of-ice-and-fire-AP)
 
-The current production release of A-song-of-ice-and-fire-API is available through [npm](https://www.npmjs.com/package/asoiaf-api):
-
-```
-npm install asoiaf-api
-```
-
-## API Data Example##
+## Example response
+[Documentation](https://anapioficeandfire.com/Documentation)
 
 ```javascript
 > var asoaif = require('asoiaf-api');
@@ -21,7 +22,7 @@ npm install asoiaf-api
     name: 'Jon Snow',
     gender: 'Male',
     culture: 'Northmen',
-    born: 'In 283 AC',
+    born: 'In 283 AC',
     died: '',
     titles: [ 'Lord Commander of the Night\'s Watch' ],
     aliases: 
@@ -46,7 +47,3 @@ npm install asoiaf-api
     tvSeries: [ 'Season 1', 'Season 2', 'Season 3', 'Season 4', 'Season 5' ],
     playedBy: [ 'Kit Harington' ] } ]
 ```
-## API ## ### Characters ###**Links**
-
- *[An API of Ice And Fire](https://anapioficeandfire.com/) 
-* [Javascript wrapper for the song of ice and fire API](https://github.com/arbazsiddiqui/A-song-of-ice-and-fire-AP)

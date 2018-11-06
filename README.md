@@ -1,49 +1,36 @@
-# Game of thrones: CARD MAKER!
+# Statictics: Name Informator!
 ###  Description
-Create your personal card: "Happy Birthday", "Women day", "Hello, friend" with the Game of Thrones world! 
- 1. Choose character or family
- 2. Customize your card: add wishes, quotes, names, background
- 3. Enjoy result!
+Find information about your name:
+ 1. Enter a name
+ 2. See results: the top countries where is your name most often found
 
 ## API
 
- - [An API of Ice And Fire](https://anapioficeandfire.com/)
- - [Javascript wrapper for the song of ice and fire API](https://github.com/arbazsiddiqui/A-song-of-ice-and-fire-AP)
+ - [Gender API](https://gender-api.com)
 
-## Example response
-[Documentation](https://anapioficeandfire.com/Documentation)
+## SIMPLE USAGE
+##### This is the easiest way to request a gender determination. Each response is JSON encoded.
+[Documentation](https://gender-api.com/en/api-docs)
 
-```javascript
-> var asoaif = require('asoiaf-api');
-> asoaif.getCharacterByName("Jon Snow");
-
-
-[ { url: 'http://www.anapioficeandfire.com/api/characters/583',
-    name: 'Jon Snow',
-    gender: 'Male',
-    culture: 'Northmen',
-    born: 'In 283 AC',
-    died: '',
-    titles: [ 'Lord Commander of the Night\'s Watch' ],
-    aliases: 
-     [ 'Lord Snow',
-       'Ned Stark\'s Bastard',
-       'The Snow of Winterfell',
-       'The Crow-Come-Over',
-       'The 998th Lord Commander of the Night\'s Watch',
-       'The Bastard of Winterfell',
-       'The Black Bastard of the Wall',
-       'Lord Crow' ],
-    father: '',
-    mother: '',
-    spouse: '',
-    allegiances: [ 'http://www.anapioficeandfire.com/api/houses/362' ],
-    books: [ 'http://www.anapioficeandfire.com/api/books/5' ],
-    povBooks: 
-     [ 'http://www.anapioficeandfire.com/api/books/1',
-       'http://www.anapioficeandfire.com/api/books/2',
-       'http://www.anapioficeandfire.com/api/books/3',
-       'http://www.anapioficeandfire.com/api/books/8' ],
-    tvSeries: [ 'Season 1', 'Season 2', 'Season 3', 'Season 4', 'Season 5' ],
-    playedBy: [ 'Kit Harington' ] } ]
+**REQUEST:**
 ```
+GET https://gender-api.com/get?name=Diana&key=<your private server key>
+```
+| Field | Type | Description |
+|--|--|--|
+| name |String | Name to query |
+| key|String|Your private server key|
+
+**RESPONCE:**
+```
+{"name":"diana","name_sanitized":"Diana","gender":"female","samples":523,"accuracy":93,"duration":"41ms","credits_used":1}
+```
+| Field | Type | Description |
+|--|--|--|
+| name |String | Submitted name in lower case |
+| name_sanitized|String|The name after we applied our normalizer to it|
+| gender |String|Possible values: male, female, unknown|
+| samples|Integer|Number of records found in our database which match your request|
+| accuracy|Integer|This value determines the reliability of our database. A value of 100 means that the results on your gender request are 100% accurate|
+| duration|String|Time the server needed to process the request|
+| credits_used|Integer|The amount of credits used for this query|

@@ -11,7 +11,7 @@ function srcPath(subdir) {
 module.exports = {
 	mode: "development",
 	entry: {
-		app: ["./src/index.js"]
+		app: ["./src/index.jsx"]
 	},
 	output: {
 		path: path.join(__dirname, outputDirectory),
@@ -20,13 +20,29 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				use: {
 					loader: "babel-loader"
 				}
+			},
+			{
+				test: /\.css$/,
+				use: [
+					'style-loader',
+					{
+						loader: 'css-loader',
+						options: {
+							modules: true,
+							importLoaders: 1,
+							camelCase: true
+						}
+					}]
 			}
 		]
+	},
+	resolve: {
+		extensions: ['.js', '.json', '.jsx']
 	},
 	devtool: "source-map",
 	plugins: [
@@ -40,6 +56,7 @@ module.exports = {
 	devServer: {
 		contentBase: outputDirectory,
 		compress: true,
+		historyApiFallback: true,
 		port: 9000
 	}
 };

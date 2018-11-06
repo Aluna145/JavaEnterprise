@@ -22,6 +22,7 @@ var j=0;
 	window.console.error('Error');
 
 };
+//
 function loadDoc() {
 	var el = document.getElementById('demo1');
 	el.innerHTML = Date();

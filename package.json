@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "description": "first app",
+  "description": "Name informator app",
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon ./startServer.js",

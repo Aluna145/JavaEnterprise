@@ -12,5 +12,5 @@ const options = { }; // webpack-hot-client options
 const client = hotClient(compiler, options);
 const { server } = client;
 server.on('listening', () => {
-  app.use(middleware(compiler, { publicPath }));
+	app.use(middleware(compiler, { publicPath }));
 });

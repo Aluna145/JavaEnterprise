@@ -1,5 +1,5 @@
 import React from "react"
 
-export const Article = ({ data }) => (
-	<span>{data.title}</span>
+export const Data = ({ data }) => (
+	<span>{data.country}</span>
 )

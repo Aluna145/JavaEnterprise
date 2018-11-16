@@ -43,23 +43,24 @@ export const About = (props) => (
 				<Typography variant="h3" gutterBottom>
 					Travel Inspiration BOard
 				</Typography>
-				<Typography variant="h3" gutterBottom>
-					Web-application for
-				</Typography>
-				<Typography variant="h3" gutterBottom>
+				<Typography variant="h6" gutterBottom>
 					Here you can add (follow) cities that you plan to visit,
-					see and compare information from different cities to decide your next trip. Not enougth inspiration
+					see and compare information from different cities to decide your next trip. Not enought inspiration
 					to visit this or that city? Go and see pictures.
 				</Typography>
 				<Typography variant="h3" gutterBottom>
+					What you can do now
+				</Typography>
+				<Typography variant="h6" gutterBottom>
 					For now you can add (follow) city card and see next information:
-					picture with views of city
-					country
-					current weather
-					currency
-					official language
-					current date and time
-					approximate flight cost from your location to desired city and dates for this cost
+					•   picture with views of city
+					•   country
+					•   monthly weather
+					•   current weather
+					•   currency
+					•   official language
+					•   current date and time
+					•   approximate flight cost from your location to desired city and dates for this cost
 					Also, if you don't like city anymore, you can unfollow (delete from your board)
 
 					For future you will

@@ -1,90 +1,90 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "description": "first app",
-  "main": "src/index.jsx",
-  "scripts": {
-	"dev": "nodemon ./startServer.js",
-	"dev:new": "webpack-serve",
-	"build": "webpack -p --progress",
-	"prod": "webpack --mode production",
-	"test": "jest",
-	"lint": "eslint --ext .js,.jsx ./src"
-  },
-  "keywords": [
-	"npm"
-  ],
-  "author": "alyona.zhabina@gmail.com",
-  "license": "ISC",
-  "devDependencies": {
-	"@babel/core": "^7.1.0",
-	"@babel/plugin-proposal-class-properties": "^7.1.0",
-	"@babel/preset-env": "^7.1.0",
-	"@babel/preset-react": "^7.0.0",
-	"axios": "^0.18.0",
-	"babel-loader": "^8.0.2",
-	"clean-webpack-plugin": "^0.1.19",
-	"css-loader": "^1.0.0",
-	"express": "^4.16.3",
-	"html-loader": "^0.5.5",
-	"html-webpack-plugin": "^3.2.0",
-	"react": "^16.5.2",
-	"react-dom": "^16.5.2",
-	"react-test-renderer": "^16.5.2",
-	"style-loader": "^0.23.0",
-	"webpack": "^4.19.0",
-	"webpack-cli": "^3.1.0",
-	"redux-mock-store": "^1.5.3",
-	"webpack-dev-middleware": "^3.3.0",
-	"webpack-hot-client": "^4.1.1",
-	"webpack-serve": "^2.0.2"
-  },
-  "optionalDependencies": {
-	"nodemon": "^1.18.4"
-  },
-  "dependencies": {
-	"@material-ui/core": "^3.4.0",
-	"@material-ui/icons": "^3.0.1",
-	"chart.js": "^2.7.3",
-	"flag-icon-css": "^3.2.1",
-	"material-ui": "^0.14.4",
-	"material-ui-icons": "^1.0.0-beta.36",
-	"react-charts": "^2.0.0-alpha.7",
-	"react-redux": "^5.0.7",
-	"react-test-renderer": "^16.5.2",
-	"react-router": "^4.3.1",
-	"react-router-dom": "^4.3.1",
-	"react-transition-group": "^1.2.1",
-	"redux": "^4.0.0",
-	"redux-devtools-extension": "^2.13.5",
-	"redux-form": "^7.4.2",
-	"redux-thunk": "^2.3.0"
-  },
-  "resolutions": {
-	"babel-core": "7.1.0"
-  },
-  "jest": {
-	"roots": [
-	  "<rootDir>/src"
-	],
-	"collectCoverageFrom": [
-	  "**/src/**/*.{js,jsx}"
-	],
-	"testEnvironment": "enzyme",
-	"snapshotSerializers": [
-	  "enzyme-to-json/serializer"
-	],
-	"testEnvironmentOptions": {
-	  "enzymeAdapter": "react16"
+	"name": "my-app",
+	"version": "0.1.0",
+	"description": "first app",
+	"main": "src/index.jsx",
+	"scripts": {
+		"dev": "nodemon ./startServer.js",
+		"dev:new": "webpack-serve",
+		"build": "webpack -p --progress",
+		"prod": "webpack --mode production",
+		"test": "jest",
+		"lint": "eslint --ext .js,.jsx ./src"
 	},
-	"testPathIgnorePatterns": [
-	  "/node_modules/"
+	"keywords": [
+		"npm"
 	],
-	"moduleFileExtensions": [
-	  "js",
-	  "jsx",
-	  "json"
-	],
-	"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|jsx)?$"
-  }
+	"author": "alyona.zhabina@gmail.com",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.1.0",
+		"@babel/plugin-proposal-class-properties": "^7.1.0",
+		"@babel/preset-env": "^7.1.0",
+		"@babel/preset-react": "^7.0.0",
+		"axios": "^0.18.0",
+		"babel-loader": "^8.0.2",
+		"clean-webpack-plugin": "^0.1.19",
+		"css-loader": "^1.0.0",
+		"express": "^4.16.3",
+		"html-loader": "^0.5.5",
+		"html-webpack-plugin": "^3.2.0",
+		"react": "^16.5.2",
+		"react-dom": "^16.5.2",
+		"react-test-renderer": "^16.5.2",
+		"style-loader": "^0.23.0",
+		"webpack": "^4.19.0",
+		"webpack-cli": "^3.1.0",
+		"redux-mock-store": "^1.5.3",
+		"webpack-dev-middleware": "^3.3.0",
+		"webpack-hot-client": "^4.1.1",
+		"webpack-serve": "^2.0.2"
+	},
+	"optionalDependencies": {
+		"nodemon": "^1.18.4"
+	},
+	"dependencies": {
+		"@material-ui/core": "^3.4.0",
+		"@material-ui/icons": "^3.0.1",
+		"chart.js": "^2.7.3",
+		"flag-icon-css": "^3.2.1",
+		"material-ui": "^0.14.4",
+		"material-ui-icons": "^1.0.0-beta.36",
+		"react-charts": "^2.0.0-alpha.7",
+		"react-redux": "^5.0.7",
+		"react-test-renderer": "^16.5.2",
+		"react-router": "^4.3.1",
+		"react-router-dom": "^4.3.1",
+		"react-transition-group": "^1.2.1",
+		"redux": "^4.0.0",
+		"redux-devtools-extension": "^2.13.5",
+		"redux-form": "^7.4.2",
+		"redux-thunk": "^2.3.0"
+	},
+	"resolutions": {
+		"babel-core": "7.1.0"
+	},
+	"jest": {
+		"roots": [
+			"<rootDir>/src"
+		],
+		"collectCoverageFrom": [
+			"**/src/**/*.{js,jsx}"
+		],
+		"testEnvironment": "enzyme",
+		"snapshotSerializers": [
+			"enzyme-to-json/serializer"
+		],
+		"testEnvironmentOptions": {
+			"enzymeAdapter": "react16"
+		},
+		"testPathIgnorePatterns": [
+			"/node_modules/"
+		],
+		"moduleFileExtensions": [
+			"js",
+			"jsx",
+			"json"
+		],
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|jsx)?$"
+	}
 }

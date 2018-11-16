@@ -1,14 +1,13 @@
-import { createStore } from 'redux'
+import {createStore, combineReducers, applyMiddleware} from 'redux'
+import thunk from 'redux-thunk'
+import {composeWithDevTools} from 'redux-devtools-extension';
 
-const reducer =(prevState, action) => {
-	console.log('Got action: ', action);
-	const newState = {...prevState};
-	switch (action.type) {
-		case 'SELECT_DATA':
-			return {...store, article: action.article}
-	}
+import {reducer as formReducer} from 'redux-form'
+import {reducer as appReducer} from "./reducer";
 
-	return newState
-};
+const reducer = combineReducers({
+	app: appReducer,
+	form: formReducer
+});
 
-export const store = createStore(reducer);
+export const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));

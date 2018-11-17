@@ -14,9 +14,10 @@ const client = hotClient(compiler, options);
 const { server } = client;
 server.on('listening', () => {
 	app.use(middleware(compiler, { publicPath }));
-
 	// Fallback when no previous route was matched
 	app.get('*', (req, res, next) => {
+		console.log("CHECK");
+
 		const filename = path.resolve(compiler.outputPath, 'index.html');
 		compiler.outputFileSystem.readFile(filename, (err, result) => {
 			if (err) {
@@ -24,6 +25,7 @@ server.on('listening', () => {
 			}
 			res.set('content-type','text/html');
 			res.send(result);
+			// console.log(result);
 			res.end();
 		});
 	});

@@ -32,11 +32,10 @@ export const Layout = ({match}) => (
 		</AppBar>
 		<Route
 			exact
-			path={`${match.url}`}
+			 path={'/'}
 			component={FirstPageConnect}
-			render={() => <Redirect to="/"/>}
 		/>
-		<Route path={`${match.url}about`} component={About}/>
-		<Route path={`${match.url}board`} component={ConnectedNews}/>
+		<Route path={`/about`} component={About}/>
+		<Route path={`/board`} component={ConnectedNews}/>
 	</main>
 );

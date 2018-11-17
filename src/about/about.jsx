@@ -27,7 +27,7 @@ const styles = {
 		// background: 'linear-gradient(to top, #66ccff 0%, #ff99cc 100%)'
 	},
 };
-export const About = (props) => (
+export const About = () => (
 	<Grid container spacing={0}
 	      alignItems="center"
 	      justify="center" style={styles.gridBack}

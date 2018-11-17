@@ -9,10 +9,10 @@ export const deleteCard = (city) => (dispatch) => {
 		type: TYPES.DELETE_CARD,
 		data: city
 	});
+	return true;
 };
-
 //card toggle
-export const cardToggle=(city)=>(dispatch)=>{
+export const cardToggle = (city) => (dispatch) => {
 	dispatch({type: TYPES.LOAD_NEWS_STARTED});
 	dispatch({
 		type: TYPES.CARD_TOGGLE,
@@ -55,7 +55,7 @@ export const loadNews = () => (dispatch, getState) => {
 	cityTo = citynameToCode(cityTo);
 
 	//load picture
-	axios.get(`https://api.teleport.org/api/urban_areas/slug:${city.toLowerCase()}/images`)
+	axios.get(`${BACKEND_URL}/api/urban_areas/slug:${city.toLowerCase()}/images`)
 		.then((response) => {
 			// Dispatching an action only when request complete
 			dispatch({
@@ -63,12 +63,14 @@ export const loadNews = () => (dispatch, getState) => {
 				data: response.data
 			});
 			//load full name (city and country) of city
-			axios.get(`https://api.teleport.org/api/cities/?search=${city.toLowerCase()}&limit=1`)
+			axios.get(`${BACKEND_URL}/api/cities/?search=${city.toLowerCase()}&limit=1`)
 				.then((response) => {
 					dispatch({
 						type: TYPES.LOAD_FULL_CITY_NAME,
-						data: response.data
+						data: response.data,
+						city
 					});
+					// setTimeout(() => loadNews()(dispatch, getState), 2000);
 					dispatch({type: TYPES.LOAD_NEWS_STARTED});
 				})
 				.catch((e) => {

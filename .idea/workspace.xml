@@ -14,12 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data/reducer.js">
+      <file leaf-file-name="about.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/about/about.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="142" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="211" selection-end-column="2" />
-              <folding />
+            <state relative-caret-position="193">
+              <caret line="81" column="120" lean-forward="false" selection-start-line="81" selection-start-column="120" selection-end-line="81" selection-end-column="120" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,7 +37,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setus</find>
       <find>loadnew</find>
       <find>deleteca</find>
       <find>selectedar</find>
@@ -65,6 +66,7 @@
       <find>card</find>
       <find>med</find>
       <find>react</find>
+      <find>load_f</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Alyona\Documents\JSEnterprise\JavascriptEnterprise</dir>
@@ -120,10 +122,10 @@
         <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/package-lock.json" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/about/about.jsx" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/data/action-creators.js" />
         <option value="$PROJECT_DIR$/src/data/reducer.js" />
+        <option value="$PROJECT_DIR$/src/about/about.jsx" />
       </list>
     </option>
   </component>
@@ -283,12 +285,12 @@
       <workItem from="1541871955573" duration="4144000" />
       <workItem from="1541886060419" duration="161389000" />
       <workItem from="1542209531881" duration="7092000" />
-      <workItem from="1542373288789" duration="21948000" />
+      <workItem from="1542373288789" duration="22213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234995000" />
+    <option name="totallyTimeSpent" value="235260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-6" width="1220" height="732" extended-state="6" />
@@ -3158,29 +3160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/about/about.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="76" column="65" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="76" selection-end-column="65" />
-          <folding>
-            <marker date="1542412140700" expanded="true" signature="7:160" ph="..." />
-            <marker date="1542412140700" expanded="true" signature="177:746" ph="{...}" />
-            <marker date="1542412140700" expanded="true" signature="192:336" ph="{&quot;borderRadius&quot;: '3px'...}" />
-            <marker date="1542412140700" expanded="true" signature="349:743" ph="{&quot;backgroundSize&quot;: 'cover'...}" />
-            <marker date="1542412140700" expanded="true" signature="783:2851" ph="&lt;Grid/&gt;" />
-            <marker date="1542412140700" expanded="true" signature="891:2842" ph="&lt;Grid/&gt;" />
-            <marker date="1542412140700" expanded="true" signature="1042:2832" ph="&lt;Grid/&gt;" />
-            <marker date="1542412140700" expanded="true" signature="1053:1134" ph="&lt;Typography/&gt;" />
-            <marker date="1542412140700" expanded="true" signature="1139:1225" ph="&lt;Typography/&gt;" />
-            <marker date="1542412140700" expanded="true" signature="1230:1507" ph="&lt;Typography/&gt;" />
-            <marker date="1542412140700" expanded="true" signature="1512:1593" ph="&lt;Typography/&gt;" />
-            <marker date="1542412140700" expanded="true" signature="1598:2820" ph="&lt;Typography/&gt;" />
-            <marker date="1542412140700" expanded="true" signature="2875:3050" ph="{&quot;title&quot;: PropTypes.string.isRequired...}" />
-            <marker date="1542412140700" expanded="true" signature="3074:3096" ph="{&quot;title&quot;: 'News app'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -3343,7 +3322,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="142" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="211" selection-end-column="2" />
-          <folding />
+          <folding>
+            <marker date="1542412844984" expanded="true" signature="60:668" ph="{&quot;username&quot;: ''...}" />
+            <marker date="1542412844984" expanded="true" signature="107:591" ph="[...]" />
+            <marker date="1542412844984" expanded="true" signature="108:590" ph="{&quot;imageSrc&quot;: 'https://d13k13wj6adfdf.cloudfront.net/urban_areas/paris-0ae0bb626e.jpg'...}" />
+            <marker date="1542412844984" expanded="true" signature="745:6219" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="831:6199" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="859:1221" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="939:1198" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="1003:1193" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="1107:1186" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="1254:1431" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="1302:1430" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="1461:1600" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="1472:1599" ph="{&quot;username&quot;: action.data...}" />
+            <marker date="1542412844984" expanded="true" signature="1638:1784" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="1649:1783" ph="{&quot;currentlocation&quot;: action.data...}" />
+            <marker date="1542412844984" expanded="true" signature="1825:2682" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="1905:2607" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="1970:2600" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="2614:2681" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="2740:3378" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="2820:3262" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="2908:3257" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="3275:3377" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="3431:4710" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="3690:3795" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="3764:3790" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="3855:3879" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="3893:4438" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="3919:4432" ph="{&quot;searchSrc&quot;: action.data._links.self.href...}" />
+            <marker date="1542412844984" expanded="true" signature="4453:4566" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="4572:4685" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="4746:5310" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="4984:5285" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="5043:5280" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="5163:5273" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="5342:6052" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="5550:5940" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="5951:6051" ph="{...}" />
+            <marker date="1542412844984" expanded="true" signature="6084:6196" ph="..." />
+            <marker date="1542412844984" expanded="true" signature="6095:6195" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/about/about.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="81" column="120" lean-forward="false" selection-start-line="81" selection-start-column="120" selection-end-line="81" selection-end-column="120" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

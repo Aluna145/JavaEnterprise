@@ -13,6 +13,7 @@ const styles = {
 		marginRight: 16,
 		marginBottom: 16,
 		marginTop: 20,
+		padding:20,
 		background: 'white'
 	},
 	gridBack: {
@@ -49,31 +50,36 @@ export const About = (props) => (
 					to visit this or that city? Go and see pictures.
 				</Typography>
 				<Typography variant="h3" gutterBottom>
-					What you can do now
+					What you can do now?
 				</Typography>
-				<Typography variant="h6" gutterBottom>
-					For now you can add (follow) city card and see next information:
-					•   picture with views of city
-					•   country
-					•   monthly weather
-					•   current weather
-					•   currency
-					•   official language
-					•   current date and time
-					•   approximate flight cost from your location to desired city and dates for this cost
-					Also, if you don't like city anymore, you can unfollow (delete from your board)
 
-					For future you will
-					see weather monthly graph to plan your farther trips
-					see more city pictures, life videos
-					see upcoming events
-					see unsafe places (which will be highlighted in red), recommended places (which will be highlighted in blue; "recommendedness" based on system data: cost, weather, city traffic, etc.)
-					compose your travel history (we plan to add worldwide map)
-					choose date "TO FROM" yourself
-					filter ticket cost: "the cheapest flight ticket", "flight ticket with luggage"
-					change design themes
-					for the distant future you will:
-					add the information you consider necessary to the city cards; Perhaps your card will be the most
+					<Typography variant="h5" gutterBottom>
+						For now you can add (follow) city card and see next information:
+					</Typography>
+				<Typography variant="h6" gutterBottom>
+					•   picture with views of city<br/>
+					•   country<br/>
+					•   monthly weather<br/>
+					•   current weather<br/>
+					•   currency<br/>
+					•   official language<br/>
+					•   current date and time<br/>
+					•   approximate flight cost from your location to desired city and dates for this cost<br/>
+					Also, if you don't like city anymore, you can unfollow (delete from your board)
+					<br/>
+				</Typography>
+					<Typography variant="h5" gutterBottom>For future you will</Typography>
+				<Typography variant="h6" gutterBottom>
+					•   see weather monthly graph to plan your farther trips<br/>
+					•   see more city pictures, life videos<br/>
+					•   see upcoming events<br/>
+					•   see unsafe places (which will be highlighted in red), recommended places (which will be highlighted in blue; "recommendedness" based on system data: cost, weather, city traffic, etc.)<br/>
+					•   compose your travel history (we plan to add worldwide map)<br/>
+					•   choose date "TO FROM" yourself<br/>
+					•   filter ticket cost: "the cheapest flight ticket", "flight ticket with luggage"<br/>
+					•   change design themes<br/>
+					•   for the distant future you will:<br/>
+					•   add the information you consider necessary to the city cards; Perhaps your card will be the most
 					informative and will be liked by other users.
 				</Typography>
 

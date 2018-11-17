@@ -74,7 +74,7 @@ export const loadNews = () => (dispatch, getState) => {
 				.catch((e) => {
 					dispatch({type: TYPES.LOAD_NEWS_FAILED, error: e});
 				});
-			axios.get(`https://api.sandbox.amadeus.com/v1.2/flights/inspiration-search?apikey=k35nI2GlvlnGipzqegHTS9FKAPkRNbyA&origin=${cityCodeCurrentLocation}&destination=${cityTo}&duration=10--15`)
+			axios.get(`https://api.sandbox.amadeus.com/v1.2/flights/inspiration-search?apikey=mra794I6xfs4jkfEcTjXpyKTiZnptJGd&origin=${cityCodeCurrentLocation}&destination=${cityTo}&duration=10--15`)
 				.then((response) => {
 					dispatch({
 						type: TYPES.LOAD_FLIGHT_DATA,

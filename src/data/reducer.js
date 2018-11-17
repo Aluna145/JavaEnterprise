@@ -140,7 +140,7 @@ return{...newState,
 					searchSrc: action.data._links.self.href,
 					fullCityName: 'City, Country',
 					city: action.data._links.self.href.replace('https://api.teleport.org/api/urban_areas/slug:', '').replace('/images/', ''),
-					currency: 'EUR',
+					currency: 0,
 					dateTo: 'yyyy-mm-dd',
 					dateBack: 'yyyy-mm-dd',
 					price: '10000',
@@ -181,8 +181,12 @@ return{...newState,
 			return {...newState};
 
 		case TYPES.LOAD_FLIGHT_DATA:
+			console.log("LOAD_FLIGTH: ");
 			let lastElementIndex = newState.cards.length - 1;
+			console.log(newState.cards[lastElementIndex].currency === 0);
 			if (newState.cards[lastElementIndex].currency === 0) {
+				console.log("Currency: ");
+				console.log(action.data.currency);
 				newState.cards[lastElementIndex].currency = action.data.currency;
 				newState.cards[lastElementIndex].dateTo = action.data.results[0].departure_date;
 				newState.cards[lastElementIndex].dateBack = action.data.results[0].return_date;
